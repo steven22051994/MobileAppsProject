@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace MobileApsProject
     public partial class MainPage : ContentPage
     {
 
-        public static List<Artikel> artikelListeEinkaufsliste = new List<Artikel>();
+        public static ObservableCollection<Artikel> artikelListeEinkaufsliste = new ObservableCollection<Artikel>();
        
         public MainPage()
         {

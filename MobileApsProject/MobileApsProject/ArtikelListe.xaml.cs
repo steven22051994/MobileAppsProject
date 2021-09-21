@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace MobileApsProject
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ArtikelListe : ContentPage
     {
-        public List<Artikel> artikelListe = new List<Artikel>()
+        public static ObservableCollection<Artikel> artikelListe = new ObservableCollection<Artikel>()
         {
             new Artikel()
             {
@@ -31,8 +32,10 @@ namespace MobileApsProject
 
         private void ProduktListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var m = ((Artikel)sender);
-            MobileApsProject.MainPage.artikelListeEinkaufsliste.Add(m);
+
+            var m = ((Artikel)e.SelectedItem);
+            MobileApsProject.MainPage.artikelListeEinkaufsliste.Add((Artikel)m);
+            
         }
     }
 }

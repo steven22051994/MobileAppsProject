@@ -9,7 +9,7 @@ namespace MobileApsProject
         public int Id { get; set; }
         public string Name { get; set; } = "";
         public string Beschreibung { get; set; } = "";
-        public string ImgLink { get; set; }
+        public string ImgLink { get; set; } = "default.jpg";
 
 
 

@@ -11,6 +11,10 @@
 
 
             <Entry x:Name="EntryBesch" Placeholder="z.B: Anzahl Kalorien"/>
+            
+            <Entry x:Name="EntryImageLink" Placeholder="Bilder-URL eingeben"/>
+
+            <Button x:Name="CreateArtikelButton" Clicked="CreateArtikelButton_Clicked" Text="Hinzufügen"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

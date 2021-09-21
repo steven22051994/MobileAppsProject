@@ -21,7 +21,9 @@ namespace MobileApsProject
 
         private void EinkaufsListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var m = ((Artikel)sender);
+
+
+            var m = MainPage.artikelListeEinkaufsliste.Where(x => e.SelectedItem.Equals(x)).FirstOrDefault();
             MainPage.artikelListeEinkaufsliste.Remove(m);
         }
     }
