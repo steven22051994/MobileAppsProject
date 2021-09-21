@@ -6,8 +6,10 @@
              mc:Ignorable="d"
              x:Class="MobileApsProject.MainPage">
     <StackLayout>
-            <Button x:Name="Button_Clicked_To_Einkaufsliste" Text="Einkaufsliste" />
-            <Button x:Name="Button_Clicked_To_Produktliste" Text="Produktliste" />
-            <Button x:Name="Button_Clicked_To_Hinzufuegen" Text="Artikel Hinzufügen" />
+        <Label Text="Meine Einkaufsapp" x:Name="Titel"/>
+
+        <Button x:Name="Button_Einkaufsliste" Clicked="Button_Clicked_To_Einkaufsliste" Text="Einkaufsliste" />
+        <Button x:Name="Button_Produktliste" Clicked="Button_Clicked_To_Produktliste" Text="Produktliste" />
+        <Button x:Name="Button_Hinzufuegen" Clicked="Button_Clicked_To_Hinzufuegen" Text="Artikel Hinzufügen" />
     </StackLayout>
 </ContentPage>

@@ -7,9 +7,10 @@
              x:Class="MobileApsProject.NinzufuegenView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="EntryName" Placeholder="Name des Produktes" />
+
+
+            <Entry x:Name="EntryBesch" Placeholder="z.B: Anzahl Kalorien"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
