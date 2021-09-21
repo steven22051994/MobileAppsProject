@@ -12,9 +12,17 @@ namespace MobileApsProject
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EinkaufsListeView : ContentPage
     {
+        
         public EinkaufsListeView()
         {
             InitializeComponent();
+            EinkaufsListView.ItemsSource = MainPage.artikelListeEinkaufsliste;
+        }
+
+        private void EinkaufsListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var m = ((Artikel)sender);
+            MainPage.artikelListeEinkaufsliste.Remove(m);
         }
     }
 }

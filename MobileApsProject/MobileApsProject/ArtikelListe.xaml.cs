@@ -12,7 +12,7 @@ namespace MobileApsProject
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ArtikelListe : ContentPage
     {
-        List<Artikel> artikelListe = new List<Artikel>()
+        public List<Artikel> artikelListe = new List<Artikel>()
         {
             new Artikel()
             {
@@ -27,6 +27,12 @@ namespace MobileApsProject
         {
             InitializeComponent();
             ProduktListView.ItemsSource = artikelListe;
+        }
+
+        private void ProduktListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var m = ((Artikel)sender);
+            MobileApsProject.MainPage.artikelListeEinkaufsliste.Add(m);
         }
     }
 }

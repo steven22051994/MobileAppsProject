@@ -9,7 +9,7 @@
         <StackLayout>
             <Label Text="Meine Einkaufsliste" />
 
-            <ListView x:Name="EinkaufsListView">
+            <ListView x:Name="EinkaufsListView" ItemSelected="EinkaufsListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell Text="{Binding Name}" Detail="{Binding Beschreibung}" ImageSource="{Binding ImgLink}" />

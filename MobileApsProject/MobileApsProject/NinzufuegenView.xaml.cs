@@ -14,6 +14,7 @@ namespace MobileApsProject
     {
         public NinzufuegenView()
         {
+
             InitializeComponent();
         }
     }
