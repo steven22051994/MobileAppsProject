@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MobileApsProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HinzufuegenPage : ContentPage
+    public partial class NinzufuegenView : ContentPage
     {
-        public HinzufuegenPage()
+        public NinzufuegenView()
         {
             InitializeComponent();
         }

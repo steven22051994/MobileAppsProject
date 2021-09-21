@@ -13,25 +13,38 @@ namespace MobileApsProject
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+
+        List<Artikel> artikelListe = new List<Artikel>()
+        {
+            new Artikel()
+            {
+                Id = 1,
+                Name = "Apfel",
+                Beschreibung = "50 Cal",
+                 ImgLink = "Product1.jpg"
+
+            }
+        };
         public MainPage()
         {
             InitializeComponent();
+           
         }
 
 
 
         private void Button_Clicked_To_Einkaufsliste(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new EinkaufsListePage());
+            Navigation.PushAsync(new EinkaufsListeView());
 
         }  
         private void Button_Clicked_To_Produktliste(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ProduktListePage());
+            Navigation.PushAsync(new ArtikelListe());
         }  
         private void Button_Clicked_To_Hinzufuegen(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new HinzufuegenPage());
+            Navigation.PushAsync(new NinzufuegenView());
         }
     }
 }

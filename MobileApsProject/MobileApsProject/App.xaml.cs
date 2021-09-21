@@ -10,6 +10,7 @@ namespace MobileApsProject
         {
             InitializeComponent();
 
+
             MainPage = new NavigationPage( new MainPage());
         }
 

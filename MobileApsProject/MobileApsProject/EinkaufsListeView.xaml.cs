@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MobileApsProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EinkaufsListePage : ContentPage
+    public partial class EinkaufsListeView : ContentPage
     {
-        public EinkaufsListePage()
+        public EinkaufsListeView()
         {
             InitializeComponent();
         }
